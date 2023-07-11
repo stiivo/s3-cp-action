@@ -2,6 +2,8 @@
 
 set -e
 
+env
+
 # Override default AWS endpoint if user sets AWS_S3_ENDPOINT.
 if [ -n "$INPUT_AWS_S3_ENDPOINT" ]; then
   ENDPOINT_APPEND="--endpoint-url $INPUT_AWS_S3_ENDPOINT"
