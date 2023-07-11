@@ -2,7 +2,7 @@
 
 set -e
 
-env
+sleep 360
 
 # Override default AWS endpoint if user sets AWS_S3_ENDPOINT.
 if [ -n "$INPUT_AWS_S3_ENDPOINT" ]; then
